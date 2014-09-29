@@ -9,7 +9,7 @@
 import UIKit
 
 
-class StartViewController: UIViewController {
+class StartViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet var cityTextField: UITextField!
     @IBOutlet var autocompleteTable: UITableView!
@@ -27,7 +27,7 @@ class StartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*//MARK: TextField delegate methods
+    //MARK: TextField delegate methods
     func textFieldDidBeginEditing(textField: UITextField) {
         autocompleteTable.hidden = false
         
@@ -38,13 +38,13 @@ class StartViewController: UIViewController {
         return 44.0
     }
     
-    /* func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    /*func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-    }*/*/
+    }*/
     
     
 }
